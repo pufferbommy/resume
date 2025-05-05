@@ -10,12 +10,13 @@
 	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
 	$: ({
 		intro = {} as IProfileResp['intro'],
+		summary = '',
 		projects = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
 		interests = [],
-		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
+		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {},
 	} = profile || {});
 
 	onMount(async () => (profile = await fetchResumeProfile()));
@@ -26,7 +27,7 @@
 	}
 </script>
 
-<header class="web-only text-center p-4 sm:p-6 bg-[#4B8B3B] text-white w-screen">
+<header class="web-only text-center p-4 sm:p-6 bg-[#4B8B3B] text-white w-full">
 	<h1 class="text-4xl">Resumette</h1>
 	<h3>
 		<button on:click={() => window.print()} class="underline text-lg">[Print]</button>
@@ -42,6 +43,16 @@
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
 	<Intro {...intro} />
+
+	<section>
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">Summary</h2>
+			<hr />
+			<p class="text-left">
+				{summary}
+			</p>
+		</Hideable>
+	</section>
 
 	<section>
 		<Hideable>
@@ -126,10 +137,10 @@
 		</Hideable>
 	</section>
 
-	<footer class="print-only">
+	<!-- <footer class="print-only">
 		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
 		or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
-	</footer>
+	</footer> -->
 </main>
 
 <style lang="postcss">

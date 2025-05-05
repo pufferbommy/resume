@@ -9,6 +9,7 @@
 		"location": "Bangkok, Thailand",
 		"website": "pufferbommy.dev"
 	},
+	"summary": "I am frontend developer who loves crafting simple, responsive, and interactive websites, with fundamental skills in HTML, CSS, and JavaScript. I am excited to use and grow my skills in a professional setting.",
 	"projects": [
 		{
 			"name": "Ruammit Tools",
@@ -72,7 +73,9 @@
 			"url": "https://unigainfo.com/",
 			"years": ["Nov 2023", "May 2024"],
 			"details": [
-				"Developed web interfaces using HTML, SCSS, Bootstrap, TypeScript, and Angular based on Figma designs."
+				"Built responsive web pages and dynamic features using Angular, TypeScript, and HTML based on Figma designs.",
+				"Styled user interfaces with SCSS and Bootstrap to match the design system and support multiple screen sizes.",
+				"Connected front-end components with REST APIs to display and update real-time data in the app."
 			]
 		},
 		{
@@ -81,10 +84,9 @@
 			"url": "https://unigainfo.com/",
 			"years": ["Apr 2023", "Oct 2023"],
 			"details": [
-				"Learned to build web applications with HTML, SCSS, Bootstrap, TypeScript, and Angular.",
-				"Created documentation for design components, functions, and sequence diagrams.",
-				"Learned to write end-to-end tests using Cypress.",
-				"Developed user interfaces and functionalities based on Figma designs using HTML, SCSS, Bootstrap, TypeScript, and Angular."
+				"Assisted in building web applications using Angular, TypeScript, HTML, SCSS, and Bootstrap based on Figma designs.",
+				"Documented reusable UI components, function logic, and flow diagrams to support frontend development.",
+				"Explored end-to-end testing with Cypress to validate user flows and improve app reliability."
 			]
 		}
 	],
